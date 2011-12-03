@@ -1,0 +1,27 @@
+= Splunk output plugin for Fluent event collector
+
+== Overview
+
+*This plugin allows you to stream logs from fluentd event collector to your splunk installation (or splunkstorm.com)*
+
+== Installation
+
+    gem install fluent-plugin-splunk
+
+== Configuration
+
+    <match pattern>
+      type splunk
+      host <splunk_host>
+      port <splunk_port>
+    </match>
+
+
+== Copyright
+
+Copyright:: Copyright (c) 2011 Abhishek Parolkar
+License::   Apache License, Version 2.0
+
+
+
+

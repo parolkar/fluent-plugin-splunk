@@ -10,8 +10,6 @@ class SplunkOutput < Fluent::Output
 
   def start
     super
-    puts @host
-    puts @port
     @splunk_connection = TCPSocket.open(@host, @port)
   end
 
